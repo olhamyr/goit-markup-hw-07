@@ -1,0 +1,152 @@
+.logo {
+    color: $acent-color;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19px;
+    text-decoration: none;
+
+    & .accent {
+      color: $wight;
+    }
+  }
+  
+.footer-section {
+    background-color: $footer-bg-color;
+
+    & .container {
+      padding-top: 60px;
+      padding-bottom: 60px;
+  }
+} 
+
+.footer-flex {
+  display: flex;
+  align-items: baseline;
+
+  & .left-part {
+    margin-right: 70px;
+  }
+
+  & .footer-address {
+    margin-top: 20px;
+    color: $wight;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.46;
+
+    & .contacts {
+      color: rgba(255, 255, 255, 0.6);
+     
+      & .item:not(:first-child) {
+        margin-top: 9px;
+      }
+
+      & .post {
+        color: $wight;
+        line-height: 1.71;
+      }
+    }
+  }
+
+  .join {
+    margin-right: 93px;
+
+    &-icon {
+      fill: currentColor;;
+    }
+
+    & .text {
+      color: $wight;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+    }
+
+    & > .list {
+      display: flex;
+      justify-content: space-between;
+      min-width: 206px;
+      margin-top: 20px;
+    }
+
+    &-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      width: 44px;
+      height: 44px;
+      color: $wight;
+      border-radius: 50%;
+      background-color: $join-link-bg;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover {
+        background-color: $acent-color;
+      }
+    }
+  }
+}
+
+.signup {
+  & .form {
+  display:flex;
+  margin-top: 20px;
+    
+    & .form-input {
+    margin: 0;
+    margin-right: 12px;
+    padding: 15px 16px;
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    background-color: $footer-bg-color;
+    color: rgba(255, 255, 255, 0.6);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     
+      &:focus {
+      border: 1px solid $acent-color;
+    }
+
+      &::placeholder {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+  }
+ }
+
+  & .text {
+  color: $wight;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+ }
+
+  & .button {
+  display: flex;
+  align-items: center;
+  padding-left: 28px;
+  padding-right: 29px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  width: 200px;
+  height: 50px;
+  color: $wight;
+  background: $acent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+ }
+
+ &-icon {
+  margin-left: 10px;
+}
+}
+
+
+
+
