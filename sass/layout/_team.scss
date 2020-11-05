@@ -75,7 +75,8 @@
       background-color: rgba(255, 255, 255, 0.1);
       transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-      &:hover {
+      &:hover,
+      &:focus {
         background-color: $acent-color;
       }
     }
@@ -84,11 +85,13 @@
       fill: currentColor;
       transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
-      &:hover {
+      &:hover,
+      &:focus {
         fill: $wight;
       } 
   
-      .socials-link:hover & {
+      .socials-link:hover &,
+      .socials-link:focus & {
         fill: $wight;
       }
     }

@@ -21,7 +21,8 @@
       transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
       opacity: 0;
 
-      .flex-element:hover & {
+      .flex-element:hover &,
+      .flex-element:focus & {
         transform: translateY(0);
         opacity: 1;
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -43,7 +44,8 @@
   line-height: 1.55;
   opacity: 0;
 
-  .flex-element:hover & {
+  .flex-element:hover &,
+  .flex-element:focus & {
     opacity: 1;
   }
 }
@@ -71,7 +73,8 @@
     border-bottom: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
 
-&:hover {
+&:hover,
+&:focus {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
